@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE0733441BCD0876007DCD1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0733431BCD0876007DCD1A /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		AE0733471BCD0A2D007DCD1A /* MusicLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0733461BCD0A2D007DCD1A /* MusicLibrary.m */; settings = {ASSET_TAGS = (); }; };
 		AE14A3DA1BCC9365006193E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE14A3D91BCC9365006193E2 /* main.m */; };
 		AE14A3DD1BCC9365006193E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE14A3DC1BCC9365006193E2 /* AppDelegate.m */; };
 		AE14A3E01BCC9365006193E2 /* PlaylistMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE14A3DF1BCC9365006193E2 /* PlaylistMasterViewController.m */; };
@@ -18,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		AE0733431BCD0876007DCD1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE0733451BCD0A2D007DCD1A /* MusicLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicLibrary.h; sourceTree = "<group>"; };
+		AE0733461BCD0A2D007DCD1A /* MusicLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicLibrary.m; sourceTree = "<group>"; };
 		AE14A3D51BCC9365006193E2 /* Algorhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorhythm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE14A3D91BCC9365006193E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE14A3DB1BCC9365006193E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 				AE14A3E61BCC9365006193E2 /* LaunchScreen.storyboard */,
 				AE14A3E91BCC9365006193E2 /* Info.plist */,
 				AE14A3D81BCC9365006193E2 /* Supporting Files */,
+				AE0733451BCD0A2D007DCD1A /* MusicLibrary.h */,
+				AE0733461BCD0A2D007DCD1A /* MusicLibrary.m */,
 			);
 			path = Algorhythm;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 				AE14A3F11BCC96A7006193E2 /* PlaylistDetailsViewController.m in Sources */,
 				AE14A3DD1BCC9365006193E2 /* AppDelegate.m in Sources */,
 				AE14A3DA1BCC9365006193E2 /* main.m in Sources */,
+				AE0733471BCD0A2D007DCD1A /* MusicLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
