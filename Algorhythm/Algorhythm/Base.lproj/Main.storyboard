@@ -16,22 +16,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktp-Pb-r7B">
-                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CQg-r1-cKi">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
                                 <animations/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="ebF-Kx-fud"/>
+                                    <constraint firstAttribute="width" constant="200" id="eeL-IY-Brh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktp-Pb-r7B">
+                                <rect key="frame" x="137" y="392" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="aOy-Db-rE6" kind="push" id="Qjs-em-tgp"/>
+                                    <segue destination="aOy-Db-rE6" kind="push" identifier="showPlaylistDetail" id="Qjs-em-tgp"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ktp-Pb-r7B" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Phf-tX-ek1"/>
-                            <constraint firstItem="ktp-Pb-r7B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iZ8-WR-hzQ"/>
+                            <constraint firstItem="ktp-Pb-r7B" firstAttribute="top" secondItem="CQg-r1-cKi" secondAttribute="bottom" constant="8" id="1fg-PC-sxb"/>
+                            <constraint firstItem="CQg-r1-cKi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MuJ-Kv-RwP"/>
+                            <constraint firstItem="CQg-r1-cKi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Q5h-N9-Qfo"/>
+                            <constraint firstItem="CQg-r1-cKi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RTJ-8A-EKJ"/>
+                            <constraint firstItem="ktp-Pb-r7B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zxp-SW-rlX"/>
+                            <constraint firstItem="CQg-r1-cKi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wMP-WM-1vs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playlists" id="QY0-bj-ryq"/>
@@ -54,10 +64,22 @@
                     <view key="view" contentMode="scaleToFill" id="1Kk-K4-fmv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0Y-LQ-2Ur">
+                                <rect key="frame" x="0.0" y="273" width="320" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="szP-4f-qdb"/>
+                    <connections>
+                        <outlet property="buttonPressLabel" destination="n0Y-LQ-2Ur" id="iDO-gE-Qa6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4nS-6T-HkE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE0733441BCD0876007DCD1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0733431BCD0876007DCD1A /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 		AE14A3DA1BCC9365006193E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE14A3D91BCC9365006193E2 /* main.m */; };
 		AE14A3DD1BCC9365006193E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE14A3DC1BCC9365006193E2 /* AppDelegate.m */; };
 		AE14A3E01BCC9365006193E2 /* PlaylistMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE14A3DF1BCC9365006193E2 /* PlaylistMasterViewController.m */; };
 		AE14A3E31BCC9365006193E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE14A3E11BCC9365006193E2 /* Main.storyboard */; };
-		AE14A3E51BCC9365006193E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE14A3E41BCC9365006193E2 /* Assets.xcassets */; };
 		AE14A3E81BCC9365006193E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE14A3E61BCC9365006193E2 /* LaunchScreen.storyboard */; };
 		AE14A3F11BCC96A7006193E2 /* PlaylistDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE14A3F01BCC96A7006193E2 /* PlaylistDetailsViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE0733431BCD0876007DCD1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE14A3D51BCC9365006193E2 /* Algorhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorhythm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE14A3D91BCC9365006193E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE14A3DB1BCC9365006193E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -24,7 +25,6 @@
 		AE14A3DE1BCC9365006193E2 /* PlaylistMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaylistMasterViewController.h; sourceTree = "<group>"; };
 		AE14A3DF1BCC9365006193E2 /* PlaylistMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaylistMasterViewController.m; sourceTree = "<group>"; };
 		AE14A3E21BCC9365006193E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AE14A3E41BCC9365006193E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE14A3E71BCC9365006193E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE14A3E91BCC9365006193E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE14A3EF1BCC96A7006193E2 /* PlaylistDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistDetailsViewController.h; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 				AE14A3EF1BCC96A7006193E2 /* PlaylistDetailsViewController.h */,
 				AE14A3F01BCC96A7006193E2 /* PlaylistDetailsViewController.m */,
 				AE14A3E11BCC9365006193E2 /* Main.storyboard */,
-				AE14A3E41BCC9365006193E2 /* Assets.xcassets */,
+				AE0733431BCD0876007DCD1A /* Assets.xcassets */,
 				AE14A3E61BCC9365006193E2 /* LaunchScreen.storyboard */,
 				AE14A3E91BCC9365006193E2 /* Info.plist */,
 				AE14A3D81BCC9365006193E2 /* Supporting Files */,
@@ -143,7 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE14A3E81BCC9365006193E2 /* LaunchScreen.storyboard in Resources */,
-				AE14A3E51BCC9365006193E2 /* Assets.xcassets in Resources */,
+				AE0733441BCD0876007DCD1A /* Assets.xcassets in Resources */,
 				AE14A3E31BCC9365006193E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
