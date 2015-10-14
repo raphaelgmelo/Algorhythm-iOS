@@ -18,8 +18,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    [self.aButton setTitle:@"Press me!" forState:UIControlStateNormal];
     
     Playlist *playlist = [[Playlist alloc] initWithIndex:0];
     
@@ -43,6 +41,11 @@
         playlistDetailsController.playlist = [[Playlist alloc] initWithIndex:0];
         
     }
+    
+}
+- (IBAction)showPlaylistDetails:(id)sender {
+
+    [self performSegueWithIdentifier:@"showPlaylistDetail" sender:sender];
     
 }
 
