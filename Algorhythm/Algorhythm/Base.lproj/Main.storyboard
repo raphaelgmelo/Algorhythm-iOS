@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="s3i-pz-Cgv">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Playlists-->
@@ -16,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="CQg-r1-cKi">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="CQg-r1-cKi">
                                 <rect key="frame" x="60" y="184" width="200" height="200"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -35,7 +36,7 @@
                             </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.1764705882352941" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ktp-Pb-r7B" firstAttribute="top" secondItem="CQg-r1-cKi" secondAttribute="bottom" constant="8" id="1fg-PC-sxb"/>
                             <constraint firstItem="CQg-r1-cKi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MuJ-Kv-RwP"/>
@@ -48,6 +49,7 @@
                     <navigationItem key="navigationItem" title="Playlists" id="QY0-bj-ryq"/>
                     <connections>
                         <outlet property="aButton" destination="ktp-Pb-r7B" id="m0j-k6-NoP"/>
+                        <outlet property="playlistImageView0" destination="CQg-r1-cKi" id="uyX-Jf-snP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -66,21 +68,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0Y-LQ-2Ur">
-                                <rect key="frame" x="0.0" y="273" width="320" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="T5S-cL-eyv">
+                                <rect key="frame" x="0.0" y="64" width="320" height="290"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="T5S-cL-eyv" secondAttribute="height" multiplier="32:29" id="k2h-aC-dNo"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oKq-D0-9YB">
+                                <rect key="frame" x="0.0" y="264" width="320" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Goes Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6z-Ye-liQ">
+                                        <rect key="frame" x="20" y="10" width="119" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgD-nW-7YO">
+                                        <rect key="frame" x="20" y="39" width="280" height="43"/>
+                                        <animations/>
+                                        <string key="text">This is a collection of my favorite songs to listen to when working out. It's got everything from fast cardio to power workout tunes. All the right fuel to get your engine going.</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="d6z-Ye-liQ" firstAttribute="top" secondItem="oKq-D0-9YB" secondAttribute="top" constant="10" id="1YM-CF-oYR"/>
+                                    <constraint firstAttribute="trailing" secondItem="XgD-nW-7YO" secondAttribute="trailing" constant="20" id="ciX-Zf-meS"/>
+                                    <constraint firstAttribute="width" secondItem="oKq-D0-9YB" secondAttribute="height" multiplier="32:9" id="dPN-yt-HI9"/>
+                                    <constraint firstItem="XgD-nW-7YO" firstAttribute="top" secondItem="d6z-Ye-liQ" secondAttribute="bottom" constant="8" id="mA7-OE-Bhp"/>
+                                    <constraint firstItem="d6z-Ye-liQ" firstAttribute="leading" secondItem="oKq-D0-9YB" secondAttribute="leading" constant="20" id="qRJ-Rg-8ch"/>
+                                    <constraint firstItem="XgD-nW-7YO" firstAttribute="leading" secondItem="oKq-D0-9YB" secondAttribute="leading" constant="20" id="v4A-13-lhV"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="oKq-D0-9YB" secondAttribute="trailing" id="0Bt-Cd-X55"/>
+                            <constraint firstAttribute="trailing" secondItem="T5S-cL-eyv" secondAttribute="trailing" id="HSH-iK-gY7"/>
+                            <constraint firstItem="T5S-cL-eyv" firstAttribute="leading" secondItem="1Kk-K4-fmv" secondAttribute="leading" id="KVA-Cf-yTu"/>
+                            <constraint firstItem="T5S-cL-eyv" firstAttribute="top" secondItem="qpl-yh-YNV" secondAttribute="bottom" id="Va2-JI-8s7"/>
+                            <constraint firstItem="oKq-D0-9YB" firstAttribute="bottom" secondItem="T5S-cL-eyv" secondAttribute="bottom" id="dDC-lu-Wgm"/>
+                            <constraint firstItem="oKq-D0-9YB" firstAttribute="leading" secondItem="1Kk-K4-fmv" secondAttribute="leading" id="pEB-bM-Lj5"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="szP-4f-qdb"/>
-                    <connections>
-                        <outlet property="buttonPressLabel" destination="n0Y-LQ-2Ur" id="iDO-gE-Qa6"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4nS-6T-HkE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,10 +128,14 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s3i-pz-Cgv" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B4o-2d-ukl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="B4o-2d-ukl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="barTintColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -107,6 +148,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="coffee" width="53" height="107"/>
+        <image name="placeholder" width="66" height="73"/>
     </resources>
 </document>

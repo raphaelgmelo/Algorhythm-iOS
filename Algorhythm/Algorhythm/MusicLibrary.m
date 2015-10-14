@@ -23,7 +23,7 @@ NSString *const kArtists = @"artists";
     if (self) {
 
         
-        //set up the dictionary
+        //set up the dictionary of playlists
         
         _library = @[@{kTitle: @"Rise and Shine",
                        kDescription: @"Get your morning going by singing along to these classic tracks as you hit the shower bright and early!",
