@@ -29,26 +29,41 @@
                                 <rect key="frame" x="161" y="66" width="157" height="165"/>
                                 <animations/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="QbN-NM-zVN" appends="YES" id="gzu-lD-Nbr"/>
+                                </connections>
                             </imageView>
                             <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="VmA-qM-xFF">
                                 <rect key="frame" x="2" y="233" width="157" height="165"/>
                                 <animations/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="5vY-Vb-KTj" appends="YES" id="QmB-6p-ynW"/>
+                                </connections>
                             </imageView>
                             <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="LrK-SQ-Prj">
                                 <rect key="frame" x="161" y="233" width="157" height="165"/>
                                 <animations/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ShY-fr-gck" appends="YES" id="cPs-bL-R46"/>
+                                </connections>
                             </imageView>
                             <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="zch-Fn-owA">
                                 <rect key="frame" x="2" y="400" width="157" height="165"/>
                                 <animations/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="KrA-sI-uHy" appends="YES" id="ttR-bc-kMb"/>
+                                </connections>
                             </imageView>
                             <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="cCd-ik-MNc">
                                 <rect key="frame" x="161" y="400" width="157" height="165"/>
                                 <animations/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="sFe-ki-0Xu" appends="YES" id="rhD-Wj-cbn"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <animations/>
@@ -100,6 +115,31 @@
                         <action selector="showPlaylistDetails:" destination="BYZ-38-t0r" id="aTQ-hZ-oSS"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="QbN-NM-zVN">
+                    <connections>
+                        <action selector="showPlaylistDetails:" destination="BYZ-38-t0r" id="NlO-zT-tjf"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="5vY-Vb-KTj">
+                    <connections>
+                        <action selector="showPlaylistDetails:" destination="BYZ-38-t0r" id="EbG-Aq-YzS"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ShY-fr-gck">
+                    <connections>
+                        <action selector="showPlaylistDetails:" destination="BYZ-38-t0r" id="poA-jF-ayf"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="KrA-sI-uHy">
+                    <connections>
+                        <action selector="showPlaylistDetails:" destination="BYZ-38-t0r" id="x4Z-wC-4g7"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="sFe-ki-0Xu">
+                    <connections>
+                        <action selector="showPlaylistDetails:" destination="BYZ-38-t0r" id="0ch-qV-w4T"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="662" y="319"/>
         </scene>
@@ -115,7 +155,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="T5S-cL-eyv">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="T5S-cL-eyv">
                                 <rect key="frame" x="0.0" y="64" width="320" height="290"/>
                                 <animations/>
                                 <constraints>
